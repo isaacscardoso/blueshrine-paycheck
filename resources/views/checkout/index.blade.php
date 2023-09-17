@@ -41,6 +41,7 @@
 
                 <form>
                     <div class="mx-auto max-w-2xl px-4 lg:max-w-none lg:px-0">
+
                         <div>
                             <x-section-title title="Informações de Contato"/>
                             <!--Email-->
@@ -53,6 +54,43 @@
                                     autocomplete="email"
                                     placeholder="Digite o seu e-mail."
                                     class="mt-2"/>
+                            </div>
+                            <!--Payment Details-->
+                            <div class="mt-10">
+                                <x-section-title title="Detalhes do Pagamento"/>
+
+                                <div class="mt-6 grid grid-cols-3 gap-x-4 gap-y-6 sm:grid-cols-4">
+                                    <!--Card Number-->
+                                    <div class="col-span-3 sm:col-span-4">
+                                        <x-input-label for="card-number" value="Número do Cartão"/>
+                                        <x-text-input
+                                            type="text"
+                                            id="card-number"
+                                            name="card-number"
+                                            placeholder="Digite o número do seu cartão."
+                                            class="mt-2"/>
+                                    </div>
+                                    <!--Expiration Date-->
+                                    <div class="col-span-2 sm:col-span-3">
+                                        <x-input-label for="expiration-date" value="Data de Vencimento"/>
+                                        <x-text-input
+                                            type="text"
+                                            id="expiration-date"
+                                            name="expiration-date"
+                                            placeholder="MM / AA"
+                                            class="mt-2"/>
+                                    </div>
+                                    <!--CVC-->
+                                    <div>
+                                        <x-input-label for="cvc" value="CVC"/>
+                                        <x-text-input
+                                            type="text"
+                                            id="cvc"
+                                            name="cvc"
+                                            placeholder="CVC"
+                                            class="mt-2"/>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
