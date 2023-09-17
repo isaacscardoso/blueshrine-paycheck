@@ -12,22 +12,16 @@
                     <dl>
                         <dt class="text-lg font-medium text-primary-200">Resumo</dt>
                     </dl>
+
+                    <x-checkout.product-list>
+                        <x-checkout.product-item
+                            image="https://cdn.awsli.com.br/600x450/761/761012/produto/218353870/editada--5--rcs401z0ta.png"
+                            name="iPhone 15 Pro Max"
+                            price="8.799,00"
+                            :features="['16GB RAM', '256 GB SSD', 'Cam 128 Mp']">
+                        </x-checkout.product-item>
+                    </x-checkout.product-list>
                 </div>
-
-                <ul role="list" class="divide-y divide-white divide-opacity-10 text-sm font-medium">
-                    <li class="flex items-start space-x-4 py-6">
-                        <img class="h-20 w-20 flex-none rounded-md object-cover object-center"
-                             src="https://tailwindui.com/img/ecommerce-images/checkout-page-07-product-01.jpg"
-                             alt="Imagem do <nome_do_produto>"/>
-                        <div class="flex-auto space-y-1">
-                            <h3 class="text-white">Nome do Produto</h3>
-                            <p class="text-primary-200">Feature 1 do Produto</p>
-                            <p class="text-primary-200">Feature 2 do Produto</p>
-                        </div>
-                        <p class="flex-none text-base font-medium text-secondary-300">R$ 210,00</p>
-                    </li>
-                </ul>
-
             </section>
         </div>
     </div>
