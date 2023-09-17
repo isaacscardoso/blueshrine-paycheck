@@ -18,9 +18,19 @@
                             image="https://cdn.awsli.com.br/600x450/761/761012/produto/218353870/editada--5--rcs401z0ta.png"
                             name="iPhone 15 Pro Max"
                             price="8.799,00"
-                            :features="['16GB RAM', '256 GB SSD', 'Cam 128 Mp']">
-                        </x-checkout.product-item>
+                            :features="['16GB RAM', '256 GB SSD', 'Cam 128 Mp']"/>
                     </x-checkout.product-list>
+
+                    <dl class="space-y-6 border-t border-white border-opacity-10 pt-6 text-sm font-medium">
+                        <x-checkout.summary-item title="Subtotal"
+                                                 value="19.723,77"
+                                                 item-value-class="text-quaternary-200"/>
+                        <x-checkout.summary-item title="Frete"
+                                                 value="120,00"
+                                                 item-value-class="text-quaternary-200"/>
+
+                        <x-checkout.summary-item title="Total" value="19.843,77" :is-last-div="true"/>
+                    </dl>
                 </div>
             </section>
         </div>
